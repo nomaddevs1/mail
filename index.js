@@ -15,7 +15,7 @@ app.use(cors());
 
 require("./middleware/passport-jwt")(passport);
 
-mongoose.connect(process.env.MONGO_URL, {
+mongoose.connect(process.env.mongourl, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
